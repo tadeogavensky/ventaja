@@ -1,0 +1,38 @@
+{
+    "plans": [
+      {
+        "id": 1,
+        "name": "Basic Plan",
+        "description": "Ideal for individuals getting started",
+        "price": 9.99,
+        "features": [
+          "Basic feature 1",
+          "Basic feature 2",
+          "Basic feature 3"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Standard Plan",
+        "description": "Great for small businesses",
+        "price": 19.99,
+        "features": [
+          "Standard feature 1",
+          "Standard feature 2",
+          "Standard feature 3"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Premium Plan",
+        "description": "Perfect for large enterprises",
+        "price": 29.99,
+        "features": [
+          "Premium feature 1",
+          "Premium feature 2",
+          "Premium feature 3"
+        ]
+      }
+    ]
+  }
+  

@@ -1,19 +1,20 @@
-import Form from "@/components/signup/Form";
+import Form from "@/components/signup/multi-step-form/Form";
+import Index from "@/components/signup/multi-step-form/Index";
 import Image from "next/image";
 import React from "react";
 
 const Login = () => {
   return (
-    <div className="flex min-h-screen justify-around">
+    <div className="flex flex-col sm:flex-row min-h-screen justify-around">
       <div className="sm:ml-auto">
-        <Form />
+        <Index/>
       </div>
       <Image
-        src={"/login.jpg"}
+        src={"/signup.jpg"}
         alt="login"
         className="w-[60%] min-h-screen object-cover ml-auto hidden sm:block"
-        width={5835}
-        height={3890}
+        width={6000}
+        height={4000}
       />
     </div>
   );

@@ -13,10 +13,12 @@ const config: Config = {
       body: ["Roboto"],
       ventaja: ["Major Mono Display", ""],
       lexend: ["Lexend Deca"],
+      dm: ["DM Sans"],
+      open: ["Open Sans"],
+
     },
     extend: {
       colors: {
-        // Puedes agregar colores personalizados aquí
         white: "#ffffffff", // Naranja brillante
         platinum: "#e5e5e5ff", // Gris oscuro
         orangeWeb: "#fca311ff", // Azul intenso

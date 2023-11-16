@@ -4,7 +4,7 @@ import React from "react";
 
 const Login = () => {
   return (
-    <div className="flex min-h-screen justify-around">
+    <div className="flex flex-col sm:flex-row min-h-screen justify-around">
       <div className="sm:ml-auto">
         <Form />
       </div>
