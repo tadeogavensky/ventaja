@@ -6,7 +6,6 @@ import PersonalInfo from "./PersonalInfo";
 import Link from "next/link";
 import useFormContext from "@/hooks/useFormContext";
 import { FormContext } from "@/context/FormContext";
-import FormInputs from "./FormInputs";
 import CompleteAccount from "./CompleteAccount";
 import BusinessData from "./BusinessData";
 
