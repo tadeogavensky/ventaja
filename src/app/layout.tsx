@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import AuthProvider from "@/providers/AuthProvider";
 import HideNavbar from "@/components/HideNavbar";
 import { FormProvider } from "@/providers/FormProvider";
+import PlanProvider from "@/providers/PlanProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,16 +21,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="overflow-x-hidden">
-      <AuthProvider>
-        <FormProvider>
-          <body className={inter.className}>
-            <HideNavbar>
-              <Navbar />
-            </HideNavbar>
-            <div className=""> {children}</div>
-          </body>
-        </FormProvider>
-      </AuthProvider>
+      <body className={inter.className}>
+        <AuthProvider>
+          <FormProvider>
+            <PlanProvider>
+              <HideNavbar>
+                <Navbar />
+              </HideNavbar>
+              {children}
+            </PlanProvider>
+          </FormProvider>
+        </AuthProvider>
+      </body>
     </html>
   );
 }

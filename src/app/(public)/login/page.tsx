@@ -11,7 +11,7 @@ const Login = () => {
       <Image
         src={"/login.jpg"}
         alt="login"
-        className="w-[60%] min-h-screen object-cover ml-auto hidden sm:block"
+        className="w-[50%] min-h-screen object-cover ml-auto hidden sm:block"
         width={5835}
         height={3890}
       />

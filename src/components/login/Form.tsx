@@ -32,19 +32,19 @@ const Form = () => {
             href={"signup"}
             className="font-semibold leading-6 text-oxfordBlue hover:text-blue-900"
           >
-            Elegí un plan{" "}
+            Registrate
           </Link>{" "}
           y ¡empezá ya!
         </span>
       </div>
 
       <div className="mt-6 mb-4">
-        <div className="flex justify-center mb-4">
+        <div className="flex justify-center mb-6">
           <button
             onClick={() => {
               signIn("google");
             }}
-            className="flex gap-1 justify-center items-center bg-white px-3 py-2 border-2 rounded-md"
+            className="flex w-full gap-1 justify-center items-center bg-white px-3 py-2 border-2 rounded"
           >
             <Image
               src={"/google.png"}
@@ -53,17 +53,17 @@ const Form = () => {
               height={900}
               className="w-6 h-6 object-cover"
             />
-            <p className="lg:hidden block">Iniciá sesión con Google</p>
+            <p className="">Iniciá sesión con Google</p>
+
           </button>
         </div>
-        <div className="flex items-center gap-4">
+      </div>
+      <div className="flex items-center gap-4">
           <span className="border-[1px] w-full"></span>
           <p className="flex whitespace-nowrap text-gray-400 text-xs">O </p>
           <span className="border-[1px] w-full"></span>
         </div>
-      </div>
-
-      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className="sm:mx-auto sm:w-full sm:max-w-sm mt-6">
         <form className="space-y-6" action="#" method="POST">
           <div>
             <label
@@ -80,7 +80,7 @@ const Form = () => {
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset p-2  sm:text-sm sm:leading-6"
+                className="block w-full rounded border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset p-2  sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -110,7 +110,7 @@ const Form = () => {
                 onChange={(e) => {
                   setPassword(e.target.value);
                 }}
-                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset p-2  sm:text-sm sm:leading-6"
+                className="block w-full rounded border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset p-2  sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -118,7 +118,7 @@ const Form = () => {
           <div>
             <button
               type="submit"
-              className="flex w-full justify-center rounded-md bg-oxfordBlue px-3 py-4 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oxfordBlue"
+              className="flex w-full justify-center rounded bg-oxfordBlue px-3 py-4 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-oxfordBlue"
             >
               Ingresar
             </button>

@@ -12,7 +12,7 @@ const Plans = () => {
     {
       id: "1",
       name: "Premium",
-      description: "A simple plan with basic features",
+      description: "El paquete perfecto para proveedores ",
       price: 25000,
       features: [
         {
@@ -25,14 +25,14 @@ const Plans = () => {
           description: "+ 4 usuarios Nivel Local",
           hasTooltip: true,
           tooltip:
-            "Solo podrás ver zonas de edificación a nivel local de tu ubicación.",
+            "Solo podrás ver zonas de edificación a nivel local en relación a tú ubicación.",
         },
       ],
     },
     {
       id: "2",
       name: "Business",
-      description: "A standard plan with more features",
+      description: "Subí de nivel con más usuarios y funciones mejoradas",
       price: 35000,
       features: [
         {
@@ -52,7 +52,7 @@ const Plans = () => {
     {
       id: "3",
       name: "Enterprise",
-      description: "Our most advanced plan with all features",
+      description: "Disfrutá de todas las Ventajas posibles",
       price: 50000,
       features: [
         {
@@ -72,7 +72,7 @@ const Plans = () => {
   ];
 
   return (
-    <div className="mt-10  flex flex-col items-center" id="plans">
+    <div className="mt-10 flex flex-col items-center" id="plans">
       <h1 className="font-dm font-bold text-2xl md:text-4xl text-center">
         Comprá tu plan y activá tu Ventaja sobre tus competidores
       </h1>
@@ -82,7 +82,7 @@ const Plans = () => {
           className="slider"
           modules={[Pagination]}
           pagination
-          spaceBetween={30}
+          spaceBetween={20}
           breakpoints={{
             200: {
               slidesPerView: 1,
@@ -98,13 +98,13 @@ const Plans = () => {
             },
             1200: {
               slidesPerView: 3,
-              spaceBetween: 30,
+              spaceBetween: 20,
             },
           }}
         >
           {plans.map((plan) => {
             return (
-              <SwiperSlide className="item-1" key={plan.id}>
+              <SwiperSlide className="" key={plan.id}>
                 <Card plan={plan} />
               </SwiperSlide>
             );

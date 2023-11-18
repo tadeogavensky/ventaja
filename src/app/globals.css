@@ -4,17 +4,33 @@
 @tailwind utilities;
 
 .slider {
-  @apply !flex !justify-center !mx-4;
+  @apply !flex !justify-center !px-4;
 }
 
 .swiper-pagination-bullets {
   bottom: initial !important;
   top: -4px !important;
 }
-.swiper-pagination-bullet{
-    width: 12px !important;
-    height: 12px !important;
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
 }
 .swiper-pagination-bullet-active {
   background-color: #14213dff !important;
 }
+
+.custom-margin {
+  @apply mx-12 sm:mx-24 my-6;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+

@@ -9,7 +9,7 @@ const UserType = () => {
   return (
     <div className="flex flex-col gap-4 w-full">
       <motion.div
-        className={`lg:w-[400px] rounded-md cursor-pointer ${
+        className={`lg:w-[400px] rounded cursor-pointer ${
           data.type == "supplier" ? "bg-platinum" : ""
         }`}
         onClick={() => {
@@ -24,7 +24,7 @@ const UserType = () => {
           alt="supplier"
           width={6773}
           height={4538}
-          className="w-full h-[100px] object-cover rounded-md "
+          className="w-full h-[100px] object-cover rounded "
         />
         <p className={`font-heading font-bold my-1 px-1 text-lg  `}>
           Proveedor
@@ -32,7 +32,7 @@ const UserType = () => {
       </motion.div>
 
       <motion.div
-        className={`lg:w-[400px] relative rounded-md cursor-pointer ${
+        className={`lg:w-[400px] relative rounded cursor-pointer ${
           data.type == "constructor" ? "bg-platinum" : ""
         }`}
         onClick={() => {
@@ -47,7 +47,7 @@ const UserType = () => {
           alt="constructor"
           width={5500}
           height={3672}
-          className="w-full h-[100px] object-cover rounded-md "
+          className="w-full h-[100px] object-cover rounded "
         />
         <p className={`font-heading font-bold my-1 px-1 text-lg`}>
           Constructora
